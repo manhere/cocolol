@@ -1,0 +1,48 @@
+
+========================================================================================================================
+                                       解析插件使用帮助
+              
+                       resource文件夹为插件目录，resource/key文件夹是调试VID用的可以在这里写规则.
+
+                     resource/local是解析文件目录，在群里下载的解析文件就可以放在这个文件中。
+                     
+=========================================================================================================================
+
+API接口
+
+这是 id方式：  http://网站/?skey=XODgwMjgyNDI0_youku
+
+这是url方式：  http://网站/?url=http://v.youku.com/v_show/id_XODgwMjgyNDI0.html
+
+调用参数：skey kkey url v（skey,v,支持手动清晰度'XODgwMjgyNDI0_youku.2'）
+
+id调试youku,tudou,ku6,sohu,iqiyi,pps,pptv,qq,sina,letv 所有的id调试方法都是他的域名，去掉前后。
+
+
+==========================================================================================================================
+
+使用实例
+?kkey=XODgwMjgyNDI0&type=youku
+支持 （清晰度切换）（VID地址）
+
+
+?skey=XODgwMjgyNDI0_youku
+?skey=aHR0cDovL3YueW91a3UuY29tL3Zfc2hvdy9pZF9YT0Rnd01qZ3lOREkwLmh0bWw=_youku
+?skey=aHR0cDovL3BsYXllci55b3VrdS5jb20vcGxheWVyLnBocC9zaWQvWE9EZ3dNamd5TkRJMC92LnN3Zg==_youku
+支持 （清晰度切换）（VID地址）(BASE64后的完整地址) (BASE64后的SWF地址)
+
+
+?v=http://v.youku.com/v_show/id_XODgwMjgyNDI0.html
+?v=aHR0cDovL3YueW91a3UuY29tL3Zfc2hvdy9pZF9YT0Rnd01qZ3lOREkwLmh0bWw=
+?v=http://player.youku.com/player.php/sid/XODgwMjgyNDI0/v.swf
+?v=aHR0cDovL3BsYXllci55b3VrdS5jb20vcGxheWVyLnBocC9zaWQvWE9EZ3dNamd5TkRJMC92LnN3Zg==
+支持 （清晰度切换）（完整地址）（SWF地址）(BASE64后的完整地址) (BASE64后的SWF地址)
+
+
+?url=aHR0cDovL3YueW91a3UuY29tL3Zfc2hvdy9pZF9YT0Rnd01qZ3lOREkwLmh0bWw=
+?url=http://v.youku.com/v_show/id_XODgwMjgyNDI0.html
+?url=http://player.youku.com/player.php/sid/XODgwMjgyNDI0/v.swf
+?url=aHR0cDovL3BsYXllci55b3VrdS5jb20vcGxheWVyLnBocC9zaWQvWE9EZ3dNamd5TkRJMC92LnN3Zg==
+支持（清晰度切换）（完整地址）（SWF地址）(BASE64后的完整地址) (BASE64后的SWF地址)
+
+=============================================================================================================================

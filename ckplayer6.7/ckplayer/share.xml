@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ckplayer>
+	<share_html>
+	{object id="movie_player" data="http://localhost/ckplayer6.7/ckplayer/ckplayer.swf" type="application/x-shockwave-flash" width="640px" height="480px"}
+	{param name="allowFullScreen" value="true" /}
+	{param name="allowscriptaccess" value="always" /}
+	{param name="allowFullScreenInteractive" value="true" /}
+	{param name="flashvars" value="[$share]" /}	
+	{div class="player_html5"}{div class="picture" style="height:100%"}{div style="line-height:460px;"}{span style="font-size:18px"}您还没有安装flash播放器,请点击{a href="http://www.adobe.com/go/getflash" target="_blank"}这里{/a}安装{/span}{/div}{/div}{/div}&nbsp;{/object}	
+	</share_html>
+	<share_flash>
+	http://localhost/ckplayer6.7/ckplayer/ckplayer.swf?[$share]
+	</share_flash>
+	<share_flashvars>
+	my_url,s,f,a
+	</share_flashvars>
+	<share_path>http://localhost/ckplayer6.7/ckplayer/share/</share_path><!--分享图片的文件夹地址-->
+	<share_replace>
+	</share_replace>
+	<share_permit>0</share_permit><!--是否有视听许可证,默认0没有，1是有-->
+	<share_uuid>
+	c25cf02c-1705-412d-bd4b-77a10b380f08
+	</share_uuid>
+	<share_button>
+		<share>
+			<id>qqmb</id>
+			<img>qq.png</img>
+			<coordinate>20,50</coordinate>
+		</share>
+		<share>
+			<id>sinaminiblog</id>
+			<img>sina.png</img>
+			<coordinate>101,50</coordinate>
+		</share>
+		<share>
+			<id>qzone</id>
+			<img>qzone.png</img>
+			<coordinate>182,50</coordinate>
+		</share>
+		<share>
+			<id>renren</id>
+			<img>rr.png</img>
+			<coordinate>263,50</coordinate>
+		</share>
+		<share>
+			<id>kaixin001</id>
+			<img>kaixin001.png</img>
+			<coordinate>20,85</coordinate>
+		</share>
+		<share>
+			<id>tianya</id>
+			<img>tianya.png</img>
+			<coordinate>101,85</coordinate>
+		</share>
+		<share>
+			<id>feixin</id>
+			<img>feixin.png</img>
+			<coordinate>182,85</coordinate>
+		</share>
+		<share>
+			<id>msn</id>
+			<img>msn.png</img>
+			<coordinate>263,85</coordinate>
+		</share>
+	</share_button>
+</ckplayer>

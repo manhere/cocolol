@@ -1,0 +1,43 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ck视频演示</title>
+<style type="text/css"><!--
+html,body{height:100%; margin:0; padding:0; overflow:hidden;text-align:center;background:#000;}
+body,td,th {font-size: 14px;color: #FFFFFF;font-weight: bold;}div{margin:0 auto;}
+a:link {color: #FFFFFF;text-decoration: none;}
+a:visited {color: #FFFFFF;text-decoration: none;}
+a:hover {color: #00FF00;text-decoration: none;}
+a:active {color: #00FF00;text-decoration: none;}
+-->
+</style>
+</head>
+<body><br><a href="index.html">CK演示</a><p>
+<input id="u" type="text" size="98" value="http://v.youku.com/v_show/id_XMTI2ODM5MDQ0OA==.html"/>
+<input type="button" value="测试播放" onClick="playert()"/>
+<div id="a1"></div>
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+function playert()
+{
+	var str = document.getElementById("u").value;
+	if(str!='')
+	{
+		var flashvars={f:'getv/?v='+encodeURIComponent(str),
+		s:2,c:0,p:1,loaded:'loadedHandler',my_url:encodeURIComponent(window.location.href)};
+		var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+		CKobject.embedSWF('player/player.swf','a1','ckplayer_a1','732','412',flashvars,params);	
+	}
+	else
+	{
+		alert("请填写播放地址");
+	}   	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+	CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1',700,394,flashvars,params);}
+playert();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root version="2.0">
+<item>
+	<rssTaskName>
+		defaultSetting
+	</rssTaskName>
+	<rssUrl>
+	http://www.youku.com/user/rss/id/UMzk2ODA1OTY4
+	</rssUrl>
+	<frequency unit="min">
+	10
+	</frequency>
+	<title>
+	<![CDATA[
+	{title}
+	]]>
+	</title>
+	<content>
+	<![CDATA[
+	[ckplayer]{link}[/ckplayer]
+	]]>
+	</content>
+	<sort>
+	未分类
+	</sort>
+	<extraSortFromTitle>
+	true
+	</extraSortFromTitle>
+	<tags>
+	</tags>
+	<ignoreRepeat>
+	true
+	</ignoreRepeat>
+	<thumbNailUrl>
+	Default
+	</thumbNailUrl>
+</item>
+</root>
